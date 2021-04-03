@@ -3,9 +3,7 @@ import { deleteMeme, getMemeById } from '../api/data.js';
 
 const detailsTemplate = (meme, isOwner, onDelete) => html`
 <section id="meme-details">
-    <h1>${meme.title}
-
-    </h1>
+    <h1>Meme Title: ${meme.title}</h1>
     <div class="meme-details">
         <div class="meme-img">
             <img alt="meme-alt" src=${meme.imageUrl}>
